@@ -6,6 +6,7 @@
     <title>P-Ticket</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://kit.fontawesome.com/b0482ba0b4.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
     <header class="my-12 mx-24">
@@ -70,7 +71,7 @@
     </section>
 
     <!-- ticketing section -->
-    <section class="ticketing bg-[#F7F8F8] text-center p-24 rounded-s-[80px] border-t-2 border-[#1DD100] ">
+    <section class="ticketing bg-[#F7F8F8] text-center p-24  rounded-s-[80px] border-t-2 border-[#1DD100] ">
 
         <h1 class="text-4xl font-bold">P.H Paribahan</h1>
         <p class="my-10 text-xl font-normal">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
@@ -120,11 +121,336 @@
             <p class="text-2xl font-semibold">Per Seat</p>
         </div>
       </div>
-<!-- ticket part -->
 
+<!-- seat select part -->
+      <div class="bg-white flex rounded-3xl my-10">
 
+        <!-- left side -->
+        <div class="w-[60%] p-10">
+            <h3 class="text-2xl font-semibold text-left">Select Your Seat</h3>
+            <div class="border-t-2 border-dashed w-[100%] "></div>
+            <div class="flex justify-between py-1">
+                <button class="btn bg-transparent border-white text-lg px-5 ">
+                    <img src="images/seat-gray.png" alt="">
+                    Available
+                </button>
+                <button class="btn text-[#1DD100] bg-transparent text-lg px-5 border-white">
+                    <img src="images/seat-green-filled.png" alt="">
+                    Selected
+                </button>
+            </div>
+            <div class="border-t-2  border-dashed w-[100%] "></div>
+            <!-- seats -->
+            <div  class=" flex flex-col gap-5 pt-5">
+                <!-- driver seats -->
+                <div class="flex justify-end"> 
+                    <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <img class="w-7" src="images/steering-wheel-svgrepo-com.svg" alt="">
+                    </button>
+                </div>
+                <!-- passenger seats  -->
+
+                <div class="flex justify-between font-bold text-xl">
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            A1
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            A2
+                        </button>
+                    </div>
+                    
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            A3
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            A4
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex justify-between font-bold text-xl">
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            B1
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            B2
+                        </button>
+                    </div>
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            B3
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            B4
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex justify-between font-bold text-xl">
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            C1
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            C2
+                        </button>
+                    </div>
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            C3
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            C4
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex justify-between font-bold text-xl">
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            D1
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            D2
+                        </button>
+                    </div>
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            D3
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            D4
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex justify-between font-bold text-xl">
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            E1
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            E2
+                        </button>
+                    </div>
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            E3
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            E4
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex justify-between font-bold text-xl">
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            F1
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            F2
+                        </button>
+                    </div>
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            F3
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            F4
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex justify-between font-bold text-xl">
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            G1
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            G2
+                        </button>
+                    </div>
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            G3
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            G4
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex justify-between font-bold text-xl">
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            H1
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            H2
+                        </button>
+                    </div>
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            H3
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            H4
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex justify-between font-bold text-xl">
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            I1
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            I2
+                        </button>
+                    </div>
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            I3
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            I4
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex justify-between font-bold text-xl">
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            J1
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            J2
+                        </button>
+                    </div>
+                    <div class="flex gap-5"> 
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            J3
+                        </button>
+                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                            J4
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- middle border -->
+        <div class="border-l-2 border-dashed ">
+        </div>
+        <!-- right side -->
+        <div class=" p-10">
+           <h3 class="text-2xl font-semibold text-left ">Select Your Seat
+           </h3>
+
+           <div class="border-t-2  border-dashed w-[100%] ">
+           </div>
+           <div class="bg-[#F7F8F8] rounded-3xl my-10">
+                        <div class="flex justify-between text-xl p-5 font-semibold">
+                            <div class="flex gap-1">
+                                <p>Seat</p>
+                                <button class="bg-[#1DD100] text-white px-1 rounded-xl">2</button>
+                            </div>
+                            <p>Class</p>
+                            <p>Price</p>
+                        </div>
+                        <div class="border-t-2 border-dashed w-[90%] ml-5"></div>
+                        <div class="flex justify-between text-xl px-5 py-2">
+                            <p>C2</p>
+                            <p>Economoy</p>
+                            <p>550</p>
+                        </div>
+                        <div class="flex justify-between text-xl px-5 py-2">
+                            <p>C2</p>
+                            <p>Economoy</p>
+                            <p>550</p>
+                        </div>
+                        <div class="border-t-2 border-solid  w-[90%] ml-5"></div>
+
+                        <div class="flex justify-between text-xl px-5 py-2 font-semibold">
+                            <p>Total Price</p>
+                            <p>BDT 1100</p>
+                        </div>
+                        <div class="flex justify-between text-lg px-5 py-2 font-semibold">
+                            <input class="font-normal h-[55px] pl-5 rounded-l-xl" type="text" placeholder="Have any copupon?">
+                            <button class="bg-[#1DD100] text-white px-5 border-[5px] border-white rounded-r-xl">Apply</button>
+                        </div>
+                        <div class="flex justify-between text-xl px-5 py-2 font-semibold">
+                            <p>Grand Total</p>
+                            <p>BDT 1100</p>
+                        </div>                     
+        
+           </div>
+
+           <form class="flex flex-col gap-3" action="">
+            <p class="font-bold text-left">Passenger Name* </p>
+            <input class="w-full border-2 h-14 pl-5 rounded-xl" type="text" placeholder="Enter your name">
+            <p class="font-bold text-left">Phone Number* </p>
+            <input class="w-full border-2 h-14 pl-5 rounded-xl" type="number" placeholder="Enter your phone number">
+            <p class="font-bold text-left">Email ID</p>
+            <input class="w-full border-2 h-14 pl-5 rounded-xl" type="email" placeholder="Enter your email id">
+
+            <button class="bg-[#1DD100]  w-full border-2 h-14 pl-5 rounded-xl text-white font-bold">Next</button>
+
+            <div class="underline flex justify-around">
+                <p>Terms and Conditions</p>
+                <p>Cancellation Policy</p>
+            </div>
+           </form>
+        </div>
+    </div>
+        
+       </div>
+      </div>
     </section>
 
-    <footer></footer>
+
+
+    <footer class="bg-black text-white p-24">
+        <div class="flex justify-between">
+            <div class="flex flex-col gap-5">
+                <h3 class="text-3xl font-bold">P-Ticket</h3>
+                <p>
+                    P-Ticket is a digital platform to make your <br>
+                    daily commuting better.
+                </p>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+                <p>Download our app</p>
+                <button class="flex gap-3 border-2 rounded-lg p-2 ">
+                    <img src="images/playstore.png" alt="">
+                    <div>
+                        <p class="text-xs ml-[-50px]">GET IT ON</p>
+                        <h4 class="text-xl mt-[-5px]">Google Play</h4>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="border-2 border-dotted border-white my-5 ">
+        </div>
+
+
+        <div class="flex justify-between">
+            <p>
+                @all rights reserved, P-Ticket services limited.2024 
+            </p>
+            <div class="flex gap-10">
+                <p>Terms & condition</p>
+                <p>Return & refund policy</p>
+                <p>Privacy policy</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
