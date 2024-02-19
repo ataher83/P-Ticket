@@ -3,6 +3,9 @@ let availableSeats = 40
 let seatCounter = 0 
 let totalPrice = 0
 
+// for 4 seat limittion
+// let selectedSeat = 0
+
 let seats = document.querySelectorAll(".seat");
 for (let i = 0; i < seats.length; i++) {
   let seat = seats[i]
@@ -31,18 +34,19 @@ seat.addEventListener("click", function() {
     pP.innerText = 550
     document.getElementById('container-Price').appendChild(pP)
 
-// console.log(typeof(pP.innerText))
-// console.log(pP)
-// console.log(typeof(pP))
-    // let price = parseFloat(document.getElementById('total-price').innerText.split(' ')[1])
-    // console.log(typeof(price))
 
     let price = parseInt(pP.innerText) 
-    // console.log(price)
     totalPrice = totalPrice + price 
-    // console.log(totalPrice)
+
     document.getElementById('total-price').innerText = totalPrice
-    // document.getElementById('grand-total').innerText = totalPrice
+
+    // for 4 seat limittion
+    // selectedSeat += 1
+
+    // if ( selectedSeat >= 4) {
+    //     // document.getElementById('seatDisabled').disabled = true;
+    //     document.querySelectorAll(".seat").disabled = true;
+    // }
    
 })
 }
