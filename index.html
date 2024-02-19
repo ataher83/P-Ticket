@@ -9,6 +9,7 @@
     <!-- <script src="https://kit.fontawesome.com/b0482ba0b4.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
+<!-- theader section -->
     <header class="my-12 mx-24">
         <nav class="flex justify-between pb-12"> 
             <h1 class="text-4xl font-bold">P-Ticket</h1>
@@ -28,12 +29,12 @@
                     Yes, you can run unit tests and view the results directly within the app. The <br>
                     integrated testing features allow for a streamlined .
                 </p>
-                <button class="px-8 py-5 rounded-xl bg-[#1DD100] text-black text-lg  font-bold border-none">
-                  Buy Tickets
-                </button>
+                <a href="#ticketing"><button class="px-8 py-5 rounded-xl bg-[#1DD100] text-black text-lg  font-bold border-none">
+                    Buy Tickets
+                  </button</a>
         </div>
     </header>
-
+<!-- offers section -->
     <section class="offers py-12 px-24 flex flex-col items-center gap-10 ">
         <h1 class="text-4xl font-bold">Best offers for you</h1>
 
@@ -70,12 +71,13 @@
           </button>
     </section>
 
-    <!-- ticketing section -->
-    <section class="ticketing bg-[#F7F8F8] text-center p-24  rounded-s-[80px] border-t-2 border-[#1DD100] ">
+<!-- ticketing section -->
+    <section id="ticketing" class="ticketing bg-[#F7F8F8] text-center p-24  rounded-s-[80px] border-t-2 border-[#1DD100]  ">
 
         <h1 class="text-4xl font-bold">P.H Paribahan</h1>
         <p class="my-10 text-xl font-normal">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
-<!-- coach part -->
+
+    <!-- coach part -->
       <div class=" bg-white flex rounded-3xl">
         <div class=" w-[75%] p-10 pt-12">
             <div class="flex justify-between pb-5"> 
@@ -88,7 +90,7 @@
                 </div>
                 <button class="btn text-[#1DD100] text-lg bg-[#E8FAE6] px-5 ">
                     <img src="images/seat-green.png" alt="">
-                    40 Seats left
+                    <span id="available-seats">40</span>Seats left
                 </button>
             </div>
             <div class="bg-[#F7F8F8] rounded-3xl">
@@ -122,7 +124,7 @@
         </div>
       </div>
 
-<!-- seat select part -->
+    <!-- seat select part -->
       <div class="bg-white flex rounded-3xl my-10">
 
         <!-- left side -->
@@ -141,7 +143,7 @@
             </div>
             <div class="border-t-2  border-dashed w-[100%] "></div>
             <!-- seats -->
-            <div  class=" flex flex-col gap-5 pt-5">
+            <div id="seats" class=" flex flex-col gap-5 pt-5">
                 <!-- driver seats -->
                 <div class="flex justify-end"> 
                     <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
@@ -152,19 +154,19 @@
 
                 <div class="flex justify-between font-bold text-xl">
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             A1
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             A2
                         </button>
                     </div>
                     
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             A3
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             A4
                         </button>
                     </div>
@@ -172,18 +174,18 @@
 
                 <div class="flex justify-between font-bold text-xl">
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             B1
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             B2
                         </button>
                     </div>
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             B3
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             B4
                         </button>
                     </div>
@@ -191,18 +193,18 @@
 
                 <div class="flex justify-between font-bold text-xl">
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             C1
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             C2
                         </button>
                     </div>
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             C3
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             C4
                         </button>
                     </div>
@@ -210,18 +212,18 @@
 
                 <div class="flex justify-between font-bold text-xl">
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             D1
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             D2
                         </button>
                     </div>
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             D3
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             D4
                         </button>
                     </div>
@@ -229,18 +231,18 @@
 
                 <div class="flex justify-between font-bold text-xl">
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             E1
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             E2
                         </button>
                     </div>
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             E3
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             E4
                         </button>
                     </div>
@@ -248,18 +250,18 @@
 
                 <div class="flex justify-between font-bold text-xl">
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             F1
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             F2
                         </button>
                     </div>
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             F3
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             F4
                         </button>
                     </div>
@@ -267,18 +269,18 @@
 
                 <div class="flex justify-between font-bold text-xl">
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             G1
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             G2
                         </button>
                     </div>
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             G3
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             G4
                         </button>
                     </div>
@@ -286,18 +288,18 @@
 
                 <div class="flex justify-between font-bold text-xl">
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             H1
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             H2
                         </button>
                     </div>
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             H3
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             H4
                         </button>
                     </div>
@@ -305,18 +307,18 @@
 
                 <div class="flex justify-between font-bold text-xl">
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             I1
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             I2
                         </button>
                     </div>
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             I3
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             I4
                         </button>
                     </div>
@@ -324,18 +326,18 @@
 
                 <div class="flex justify-between font-bold text-xl">
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             J1
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             J2
                         </button>
                     </div>
                     <div class="flex gap-5"> 
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             J3
                         </button>
-                        <button class="bg-[#E6E7E7] px-12 py-4 rounded-xl">
+                        <button class="seat bg-[#E6E7E7] px-12 py-4 rounded-xl">
                             J4
                         </button>
                     </div>
@@ -347,6 +349,7 @@
         <!-- middle border -->
         <div class="border-l-2 border-dashed ">
         </div>
+
         <!-- right side -->
         <div class=" p-10">
            <h3 class="text-2xl font-semibold text-left ">Select Your Seat
@@ -355,35 +358,52 @@
            <div class="border-t-2  border-dashed w-[100%] ">
            </div>
            <div class="bg-[#F7F8F8] rounded-3xl my-10">
+
                         <div class="flex justify-between text-xl p-5 font-semibold">
                             <div class="flex gap-1">
                                 <p>Seat</p>
-                                <button class="bg-[#1DD100] text-white px-1 rounded-xl">2</button>
+                                <p id="seat-counter" class="bg-[#1DD100] text-white px-1 rounded-xl">0</p>
                             </div>
                             <p>Class</p>
                             <p>Price</p>
                         </div>
+                        <!-- underline -->
                         <div class="border-t-2 border-dashed w-[90%] ml-5"></div>
-                        <div class="flex justify-between text-xl px-5 py-2">
-                            <p>C2</p>
-                            <p>Economoy</p>
-                            <p>550</p>
-                        </div>
-                        <div class="flex justify-between text-xl px-5 py-2">
-                            <p>C2</p>
-                            <p>Economoy</p>
-                            <p>550</p>
-                        </div>
-                        <div class="border-t-2 border-solid  w-[90%] ml-5"></div>
+                        
+                        <!-- ticket description container -->
+                        <div id="tkt-desc-container" class="flex justify-around text-xl">
 
+                            <div id="container-Seat">
+                                <!-- <p>C1</p>
+                                <p>C2</p>
+                                <p>C3</p> -->
+                            </div>
+
+                            <div id="container-Class">
+                                <!-- <p>Economoy</p>
+                                <p>Economoy</p>
+                                <p>Economoy</p> -->
+                            </div>
+
+                            <div id="container-Price">
+                                <!-- <p>550</p>
+                                <p>550</p>
+                                <p>550</p> -->
+                            </div>
+                        </div>
+                        
+                        <!-- underline -->
+                        <div class="border-t-2 border-solid  w-[90%] ml-5"></div>
+                        <!-- Total Price -->
                         <div class="flex justify-between text-xl px-5 py-2 font-semibold">
                             <p>Total Price</p>
-                            <p>BDT 1100</p>
+                            <p >BDT <span id="total-price">1100</span></p>
                         </div>
                         <div class="flex justify-between text-lg px-5 py-2 font-semibold">
                             <input class="font-normal h-[55px] pl-5 rounded-l-xl" type="text" placeholder="Have any copupon?">
                             <button class="bg-[#1DD100] text-white px-5 border-[5px] border-white rounded-r-xl">Apply</button>
                         </div>
+                        <!-- Grand Total -->
                         <div class="flex justify-between text-xl px-5 py-2 font-semibold">
                             <p>Grand Total</p>
                             <p>BDT 1100</p>
@@ -407,14 +427,14 @@
             </div>
            </form>
         </div>
-    </div>
-        
-       </div>
       </div>
+        
+     </div>
+     </div>
     </section>
 
 
-
+<!-- footer section -->
     <footer class="bg-black text-white p-24">
         <div class="flex justify-between">
             <div class="flex flex-col gap-5">
@@ -452,5 +472,9 @@
             </div>
         </div>
     </footer>
+
+
+
+<script src="scripts/index.js"></script>
 </body>
 </html>
