@@ -1,17 +1,12 @@
 
-// const availableSeats40 = document.getElementById('available-seats')
 let availableSeats = 40
 let seatCounter = 0 
 let totalPrice = 0
 
-// console.log(availableSeats.innerText)
-// console.log(parseInt(availableSeats.innerText, 10))
-// let a = parseInt(availableSeats.innerText)
-// console.log(typeof(availableSeats.innerText))
-// console.log(typeof(availableSeats))
 let seats = document.querySelectorAll(".seat");
 for (let i = 0; i < seats.length; i++) {
   let seat = seats[i]
+
 
 seat.addEventListener("click", function() {
 
@@ -24,7 +19,6 @@ seat.addEventListener("click", function() {
     seatCounter += 1
     document.getElementById('seat-counter').innerText = seatCounter
     
-
     let pS = document.createElement('p')
     pS.innerText = seat.innerText
     document.getElementById('container-Seat').appendChild(pS)
@@ -48,14 +42,23 @@ seat.addEventListener("click", function() {
     totalPrice = totalPrice + price 
     // console.log(totalPrice)
     document.getElementById('total-price').innerText = totalPrice
-    
-    
-
-
-
-
-
-    
+    // document.getElementById('grand-total').innerText = totalPrice
+   
 })
 }
 
+const btnApply = document.getElementById('btn-Apply')
+btnApply.addEventListener("click", function() {
+    const couponCode = document.getElementById('coupon-Input-Field').value 
+
+    if (couponCode === "NEW15") {
+        document.getElementById('grand-total').innerText = totalPrice - (totalPrice * (15/100)) 
+        document.getElementById('coupon-area').classList.add('hidden')
+    }  else if (couponCode === "Couple 20") {
+        document.getElementById('grand-total').innerText = totalPrice - (totalPrice * (20/100))
+        document.getElementById('coupon-area').classList.add('hidden')
+    } else {
+        alert ('Invalid Coupon Code')
+    }
+     
+})

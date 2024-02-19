@@ -397,25 +397,30 @@
                         <!-- Total Price -->
                         <div class="flex justify-between text-xl px-5 py-2 font-semibold">
                             <p>Total Price</p>
-                            <p >BDT <span id="total-price">1100</span></p>
+                            <p >BDT <span id="total-price">0</span></p>
                         </div>
-                        <div class="flex justify-between text-lg px-5 py-2 font-semibold">
-                            <input class="font-normal h-[55px] pl-5 rounded-l-xl" type="text" placeholder="Have any copupon?">
-                            <button class="bg-[#1DD100] text-white px-5 border-[5px] border-white rounded-r-xl">Apply</button>
+                        <div id="coupon-area" class=" flex justify-between text-lg px-5 py-2 font-semibold">
+
+                            <input id="coupon-Input-Field" class="font-normal h-[55px] pl-5 rounded-l-xl" type="text" placeholder="Have any coupon?">
+
+                            <button id="btn-Apply" class="bg-[#1DD100] text-white px-5 border-[5px] border-white rounded-r-xl">Apply</button>
                         </div>
                         <!-- Grand Total -->
                         <div class="flex justify-between text-xl px-5 py-2 font-semibold">
                             <p>Grand Total</p>
-                            <p>BDT 1100</p>
+                            <p >BDT <span id="grand-total">0</span></p>
                         </div>                     
         
            </div>
 
            <form class="flex flex-col gap-3" action="">
+
             <p class="font-bold text-left">Passenger Name* </p>
             <input class="w-full border-2 h-14 pl-5 rounded-xl" type="text" placeholder="Enter your name">
+
             <p class="font-bold text-left">Phone Number* </p>
-            <input class="w-full border-2 h-14 pl-5 rounded-xl" type="number" placeholder="Enter your phone number">
+            <input class="w-full border-2 h-14 pl-5 rounded-xl" type="tel" pattern="[0–9]{11}" min="0" max="9" id="phone" name="phone" placeholder="Enter your phone number">
+
             <p class="font-bold text-left">Email ID</p>
             <input class="w-full border-2 h-14 pl-5 rounded-xl" type="email" placeholder="Enter your email id">
 
